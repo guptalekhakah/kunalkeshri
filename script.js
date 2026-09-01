@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'Executed 360° stall branding — banners, backdrops, signage — from concept to on-site install, and built an in-house automated ID card system with pre-loaded templates and auto-cropping that cut manual work by 90%.'
     },
     {
-      image: 'images/Image4.jpg',
+      image: 'images/Image4.png',
       title: 'CEO Assam — Election Awareness',
       role: 'Multimedia Designer, Public Awareness · via Priya Communication',
       year: '2021 – 2024',
