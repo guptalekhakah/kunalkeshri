@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunal Keshri — Brand Designer &amp; Multimedia Storyteller</title>
+<meta name="description" content="Kunal Keshri — Freelance Brand Designer &amp; Design Management. 12+ years across brand identity, video production, 3D visualization and print, from election awareness campaigns to luxury hospitality branding.">
+
+<!-- Favicon: inline SVG aperture/play mark, cyan→magenta gradient -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300E5FF'/%3E%3Cstop offset='1' stop-color='%23FF2E63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230A0B0F'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='url(%23g)' stroke-width='4'/%3E%3Cpath d='M27 22 L44 32 L27 42 Z' fill='url(%23g)'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM PEN-TOOL CURSOR (desktop only, JS-driven) ============ -->
+<div class="cursor-nib" id="cursorNib"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ LEFT SCRUBBER RAIL — signature element, fills as you scroll ============ -->
+<nav class="scrubber-rail" id="scrubberRail" aria-hidden="true">
+  <div class="scrubber-track">
+    <div class="scrubber-fill" id="scrubberFill"></div>
+  </div>
+</nav>
+
+<!-- ============ TOP PLAYBACK NAV ============ -->
+<header class="topbar">
+  <a href="#home" class="logo-mark" aria-label="Kunal Keshri — home">
+    <span class="logo-bracket">[</span>KK<span class="logo-bracket">]</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="playback-nav" id="playbackNav">
+    <li><a href="#home" data-tc="00:00" class="nav-link active">HOME</a></li>
+    <li><a href="#about" data-tc="00:12" class="nav-link">ABOUT</a></li>
+    <li><a href="#skills" data-tc="00:24" class="nav-link">SKILLS</a></li>
+    <li><a href="#services" data-tc="00:36" class="nav-link">SERVICES</a></li>
+    <li><a href="#work" data-tc="00:48" class="nav-link">WORK</a></li>
+    <li><a href="#experience" data-tc="01:00" class="nav-link">EXPERIENCE</a></li>
+    <li><a href="#contact" data-tc="01:12" class="nav-link">CONTACT</a></li>
+  </ul>
+
+  <div class="rec-indicator">
+    <span class="rec-dot"></span> AVAILABLE FOR WORK
+  </div>
+</header>
+
+<main id="pageTop">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="section hero" data-timecode="00:00">
+    <div class="hero-grid">
+
+      <div class="hero-copy">
+        <p class="eyebrow mono">// BRAND DESIGN &amp; DESIGN MANAGEMENT</p>
+        <h1 class="hero-title">
+          <span class="glitch-wrap" data-text="KUNAL">KUNAL</span>
+          <span class="glitch-wrap" data-text="KESHRI">KESHRI</span>
+        </h1>
+        <p class="hero-tagline">
+          Twelve-plus years turning briefs into brands — election-awareness films for
+          government, 360° activations for corporates, and quiet luxury branding for
+          hospitality — across Northeast India and beyond.
+        </p>
+
+        <div class="hero-meta mono">
+          <span>GUWAHATI, ASSAM, INDIA</span>
+          <span class="dot-sep">•</span>
+          <span>12+ YRS EXPERIENCE</span>
+          <span class="dot-sep">•</span>
+          <span>BRAND · VIDEO · 3D · PRINT</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">
+            <span>View Work</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-frame">
+        <div class="viewfinder">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <span class="viewfinder-tc mono">REC 00:00:00</span>
+          <!-- Top profile photo -->
+          <img src="images/image1.jpeg" alt="Kunal Keshri" class="hero-photo">
+        </div>
+      </div>
+   </div>
+
+    <a href="#about" class="scroll-cue mono" aria-label="Scroll to about section">
+      <span>SCROLL</span>
+      <span class="scroll-cue-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about-section" data-timecode="00:12">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow mono">// 00:12 — ABOUT</p>
+      <h2>The person behind the frame</h2>
+    </div>
+
+    <div class="about-grid" data-reveal>
+      <div class="about-copy">
+        <p>
+          Kunal Keshri is a versatile brand and design professional blending
+          creativity with purpose — from election-awareness campaigns to
+          luxury branding. Over 12+ years he's moved fluidly between graphic
+          design, video production, print, 3D visualization, and AI-enhanced
+          workflows, delivering end-to-end campaigns for government bodies,
+          corporates, and hospitality brands across Northeast India.
+        </p>
+        <p>
+          Whether it's a 360° stall activation, a train wrapped edge-to-edge
+          in a public-health message, or a hotel's complete visual identity —
+          the throughline is the same: understand the audience, then design
+          for them, not at them.
+        </p>
+      </div>
+
+      <div class="about-panel mono">
+        <div class="panel-row"><span>FILE</span><span>KUNAL_KESHRI.PROFILE</span></div>
+        <div class="panel-row"><span>ROLE</span><span>Brand Designer &amp; Design Management</span></div>
+        <div class="panel-row"><span>BASED</span><span>Guwahati, Assam, India</span></div>
+        <div class="panel-row"><span>EXPERIENCE</span><span>12+ Years</span></div>
+        <div class="panel-row"><span>SECTORS</span><span>Govt · Corporate · Hospitality</span></div>
+        <div class="panel-row"><span>DISCIPLINES</span><span>Brand · Video · 3D · Print</span></div>
+        <div class="panel-row"><span>STATUS</span><span class="status-live">● AVAILABLE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills-section" data-timecode="00:24">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow mono">// 00:24 — STACK</p>
+      <h2>Core Skills &amp; Technical Stack</h2>
+    </div>
+
+    <div class="skills-grid" data-reveal>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon1.svg" alt="" aria-hidden="true">
+        <h3>Design Software</h3>
+        <div class="tag-row">
+          <span>Photoshop</span><span>Illustrator</span><span>Premiere Pro</span>
+          <span>After Effects</span><span>Adobe XD</span><span>Figma</span>
+          <span>CorelDRAW</span><span>FlexiSign</span><span>Celtx</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon2.svg" alt="" aria-hidden="true">
+        <h3>3D &amp; Visualization</h3>
+        <div class="tag-row">
+          <span>3D Modeling</span><span>SketchUp</span><span>V-Ray</span><span>RDCAM</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon3.svg" alt="" aria-hidden="true">
+        <h3>Print &amp; Production</h3>
+        <div class="tag-row">
+          <span>CMYK &amp; Press-Ready Prep</span><span>Large-Format Printing</span>
+          <span>Packaging Dielines</span><span>Large-Scale Printing</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon4.svg" alt="" aria-hidden="true">
+        <h3>AI-Enhanced Design</h3>
+        <div class="tag-row">
+          <span>ChatGPT / DeepSeek</span><span>Midjourney</span><span>Canva</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon5.svg" alt="" aria-hidden="true">
+        <h3>Video &amp; Motion</h3>
+        <div class="tag-row">
+          <span>Video Editing</span><span>Motion Graphics</span><span>Cinematography</span>
+          <span>Storyboarding</span><span>Post-Production</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img class="skill-icon" src="icons/icon6.svg" alt="" aria-hidden="true">
+        <h3>Project &amp; Client Mgmt</h3>
+        <div class="tag-row">
+          <span>Project Management</span><span>Vendor Coordination</span>
+          <span>Client Reporting</span><span>Govt. Sector Collaboration</span><span>UX Workflow</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section services-section" data-timecode="00:36">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow mono">// 00:36 — SERVICES</p>
+      <h2>What Kunal delivers</h2>
+    </div>
+
+    <div class="services-grid" data-reveal>
+      <div class="service-card"><span class="clip-code mono">3D</span><h3>3D Design</h3></div>
+      <div class="service-card"><span class="clip-code mono">AN</span><h3>Animation</h3></div>
+      <div class="service-card"><span class="clip-code mono">BR</span><h3>Brand Design</h3></div>
+      <div class="service-card"><span class="clip-code mono">IL</span><h3>Illustration</h3></div>
+      <div class="service-card"><span class="clip-code mono">IN</span><h3>Interior Design</h3></div>
+      <div class="service-card"><span class="clip-code mono">PK</span><h3>Packaging Design</h3></div>
+      <div class="service-card"><span class="clip-code mono">VE</span><h3>Video Editing</h3></div>
+      <div class="service-card"><span class="clip-code mono">VP</span><h3>Video Production</h3></div>
+      <div class="service-card"><span class="clip-code mono">WD</span><h3>Web Design</h3></div>
+      <div class="service-card"><span class="clip-code mono">EC</span><h3>Event Coordination</h3></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK / PROJECTS ============ -->
+  <section id="work" class="section work-section" data-timecode="00:48">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow mono">// 00:48 — SELECTED WORK</p>
+      <h2>Featured Projects</h2>
+      <p class="section-sub">Click any frame to open — project cards are generated from <code class="mono">script.js</code>, images read from <code class="mono">image1.jpg … image6.jpg</code>.</p>
+    </div>
+
+    <div class="work-grid" id="workGrid"><!-- injected by script.js --></div>
+  </section>
+
+  <!-- ============ PROJECT LIGHTBOX (pop / slide-in) ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button class="lightbox-close mono" id="lightboxClose" aria-label="Close">CLOSE ✕</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous project">‹</button>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next project">›</button>
+
+      <div class="lightbox-media">
+        <span class="viewfinder-tc mono" id="lightboxTc">PLAY 00:00:00</span>
+        <img id="lightboxImg" src="" alt="">
+      </div>
+      <div class="lightbox-info">
+        <p class="eyebrow mono" id="lightboxRole"></p>
+        <h3 id="lightboxTitle"></h3>
+        <p class="lightbox-year mono" id="lightboxYear"></p>
+        <p id="lightboxDesc"></p>
+        <div class="tag-row" id="lightboxTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EXPERIENCE TIMELINE ============ -->
+  <section id="experience" class="section experience-section" data-timecode="01:00">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow mono">// 01:00 — TIMELINE</p>
+      <h2>Experience</h2>
+      <p class="section-sub">Ten roles across twelve-plus years — laid out like a cutting-room timeline, most recent first.</p>
+    </div>
+
+    <div class="timeline" id="timeline"><!-- injected by script.js --></div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section" data-timecode="01:12">
+    <div class="contact-grid">
+      <div class="contact-copy" data-reveal>
+        <p class="eyebrow mono">// 01:12 — CONTACT</p>
+        <h2>Let's make something.</h2>
+        <p class="section-sub">
+          Got a brand, a campaign, or a story that needs a frame? Guwahati-based,
+          available for freelance and on-site work across Northeast India.
+        </p>
+        <a class="btn btn-primary contact-cta" href="mailto:kunalekaurac@gmail.com?subject=Project%20Enquiry">
+          <span>Email Kunal</span>
+        </a>
+      </div>
+
+      <div class="contact-panel mono" data-reveal>
+        <div class="panel-row"><span>LOCATION</span><span>Guwahati, Assam, India</span></div>
+        <div class="panel-row"><span>EMAIL</span><a href="mailto:kunalekaurac@gmail.com">kunalekaurac@gmail.com</a></div>
+        <div class="panel-row"><span>PHONE</span><a href="tel:+91 95084 42470">+91 95084 42470</a></div>
+        <div class="panel-row social-row">
+          <span>SOCIAL</span>
+          <span class="social-icons">
+            <a href="https://www.instagram.com/sarggek" aria-label="Instagram"><img src="icons/icon7.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/kunal-keshri-b8231a233?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn"><img src="icons/icon8.svg" alt=""></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year"></span> KUNAL KESHRI</span>
+  <a href="#home">BACK TO TOP ↑</a>
+</footer>
+
+<!-- ============ FLOATING GALLERY BUTTON ============ -->
+<a href="gallery.html" id="galleryFab" class="fab-gallery" aria-label="Open full gallery">
+  <img src="icons/gallery-icon.png" alt="" class="fab-icon">
+  <span class="fab-label mono">GALLERY</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
