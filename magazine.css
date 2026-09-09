@@ -1,0 +1,418 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   ROOT
+================================ */
+
+:root {
+    --background: #1a1d3e;
+    --text: #cf9c6d;
+    --text-light: rgba(207, 156, 109, 0.78);
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background: var(--background);
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   MAIN PAGE
+================================ */
+
+.magazine-page {
+    width: 100%;
+    min-height: 100dvh;
+
+    background: var(--background);
+
+    display: flex;
+    flex-direction: column;
+
+    padding:
+        max(18px, env(safe-area-inset-top))
+        18px
+        max(16px, env(safe-area-inset-bottom));
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.magazine-header {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    flex-shrink: 0;
+
+    padding: 8px 0 16px;
+}
+
+
+.magazine-header h1 {
+    color: var(--text);
+
+    font-size: clamp(24px, 4vw, 48px);
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    line-height: 1.15;
+
+    margin-bottom: 8px;
+}
+
+
+.magazine-header p {
+    color: var(--text-light);
+
+    font-size: clamp(13px, 2vw, 17px);
+
+    line-height: 1.6;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* ================================
+   MAGAZINE SECTION
+================================ */
+
+.magazine-section {
+    flex: 1;
+
+    width: 100%;
+
+    min-height: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 4px 0;
+}
+
+
+/* ================================
+   MAGAZINE WRAPPER
+================================ */
+
+.magazine-wrapper {
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* ================================
+   BOOK
+================================ */
+
+#book {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    touch-action: pan-y;
+
+    user-select: none;
+
+    -webkit-user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ================================
+   PAGE STYLING
+================================ */
+
+.stf__parent {
+    margin: auto !important;
+}
+
+
+.stf__wrapper {
+    filter:
+        drop-shadow(
+            0 25px 35px rgba(0, 0, 0, 0.45)
+        );
+}
+
+
+.stf__block {
+    background: transparent !important;
+}
+
+
+.stf__item {
+    background: #ffffff;
+}
+
+
+/* Canvas / Image pages */
+
+.stf__item img,
+.stf__canvas img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    pointer-events: none;
+}
+
+
+/* ================================
+   PAGE COUNTER
+================================ */
+
+.page-status {
+    width: 100%;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    padding-top: 10px;
+
+    flex-shrink: 0;
+
+    opacity: 0.85;
+}
+
+
+.page-status .divider {
+    padding: 0 5px;
+
+    opacity: 0.55;
+}
+
+
+/* ================================
+   DESKTOP
+================================ */
+
+@media (min-width: 900px) {
+
+    .magazine-page {
+        padding: 28px 40px 22px;
+    }
+
+
+    .magazine-header {
+        padding-bottom: 20px;
+    }
+
+
+    .magazine-section {
+        padding: 10px 0;
+    }
+
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 899px) {
+
+    .magazine-page {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .magazine-page {
+        min-height: 100svh;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .magazine-header {
+        padding-top: 4px;
+        padding-bottom: 12px;
+    }
+
+
+    .magazine-header h1 {
+        font-size: clamp(22px, 7vw, 32px);
+
+        margin-bottom: 7px;
+
+        line-height: 1.12;
+    }
+
+
+    .magazine-header p {
+        font-size: 13px;
+
+        line-height: 1.5;
+
+        max-width: 95%;
+    }
+
+
+    .magazine-section {
+        padding: 0;
+    }
+
+
+    .page-status {
+        font-size: 11px;
+
+        padding-top: 8px;
+        padding-bottom: 2px;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+
+    .magazine-header h1 {
+        font-size: 21px;
+    }
+
+
+    .magazine-header p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ================================
+   LANDSCAPE MOBILE
+================================ */
+
+@media (max-height: 550px) and (orientation: landscape) {
+
+    .magazine-page {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+
+    .magazine-header {
+        padding-top: 0;
+        padding-bottom: 6px;
+    }
+
+
+    .magazine-header h1 {
+        font-size: 22px;
+
+        margin-bottom: 3px;
+    }
+
+
+    .magazine-header p {
+        font-size: 11px;
+    }
+
+
+    .page-status {
+        padding-top: 3px;
+    }
+
+}
+
+
+/* ================================
+   LOADING STATE
+================================ */
+
+#book.loading::before {
+    content: "Loading Magazine...";
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================================
+   ACCESSIBILITY
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+
+}
